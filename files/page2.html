@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ski-chalets</title>
+      <link href="styles.css" type="text/css" rel="stylesheet">
+
+      <style>
+          /* breakpoints for 700px */
+      @media screen and (max-width:700px) {
+        div.head{
+          flex-direction: column;
+            }
+            .gridForNav{
+              display: flex;
+              flex-direction: column;
+            }
+            .mainPage2{
+              display: flex;
+              flex-direction: column;
+            }
+        }
+
+      </style>
+  </head>
+<body class="page2">
+  <header>
+    <div class="head page2">
+      <!-- Display name of the page -->
+    <div><h1>Summer</br><em style="color:fuchsia;"> "Test site, nothing is real here :)"</em></h1></div>
+      <!-- Display the countdown timer in an element -->
+    <div><h2>Countdown to Christmas: <p id="demo"></p></h2></div>
+    <div>
+      <!-- Display company logo -->
+      <img src="../img/chaletLogo.jpg" alt="chaletLogo">
+    </div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
+  </header>
+  <nav>
+    <ol class="gridForNav">
+
+
+        <!-- containers for nav points -->
+        <div class="menu link5">
+
+        <a href="../index.html">&#9734; Home  &#9734;</a>
+
+        </div>
+        <div class="menu link1">
+
+            <a href="page1.html">&#9734; Accomodation &#9734;
+            </a>
+
+        </div>
+        <!-- <div class="menu link2"> -->
+
+            <!-- <a href="files/page2.html">page2</a> -->
+
+        <!-- </div> -->
+        <div class="menu link3">
+
+            <a href="page3.html">&#9734; Winter &#9734;</a>
+
+        </div>
+        <div class="menu link4">
+
+            <a href="page4.html">&#9734; Contact Us &#9734;</a>
+
+        </div>
+
+
+
+  </ol>
+</nav>
+<main class="mainPage2">
+  <div class="mainPage2_1">
+        <img src="../img/sauna.jpg" style="width:95%" alt="sauna">
+  </div>
+  <div class="mainPage2_2">
+      <h1>Our Saunas Just heated over:100 C°</br>
+      (watch out for Pugsley if you naked.)</h1>
+  </div>
+  <div class="mainPage2_3">
+    <img src="../img/summer.jpg" style="width:95%" alt="summer">
+  </div>
+  <div class="mainPage2_4">
+      <h1>Even flowers if its realy hot summer.</h1>
+  </div>
+  <div class="mainPage2_5">
+    <h1>At night time</br>Our Pool Just heated over: 0 C°</br> extremly refreshing!</h1>
+  </div>
+  <div class="mainPage2_6">
+    <img src="../img/pool.jpg" style="width:95%" alt="pool">
+  </div>
+
+</main>
+<footer class="footerPage2">
+  <div class="footIndex">
+
+
+      <iframe width="95%" height="220" ; src="https://www.youtube.com/embed/tEqcxmSMNfE?autoplay=1"></iframe>
+  </div>
+</footer>
+</body>

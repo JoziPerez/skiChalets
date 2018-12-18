@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ski-chalets</title>
+      <link href="styles.css" type="text/css" rel="stylesheet">
+
+      <style>
+          /* breakpoints for 700px */
+      @media screen and (max-width:700px) {
+        div.head{
+          flex-direction: column;
+            }
+            .hidden{
+              display: none;
+            }
+            .gridForNav{
+              display: flex;
+              flex-direction: column;
+            }
+            .mainPage4{
+              display: flex;
+              flex-direction: column;
+            }
+
+        }
+
+      </style>
+  </head>
+<body class="page4">
+  <header>
+    <div class="head page4">
+            <!-- Display name of the page -->
+      <div><h1>Contact us</br><em style="color:fuchsia;"> "Test site, nothing is real here :)"</em></h1></div>
+        <!-- Display the countdown timer in an element -->
+      <div><h2>Countdown to Christmas: <p id="demo"></p></h2></div>
+      <div>
+          <!-- Display company logo -->
+        <img src="../img/chaletLogo.jpg" alt="chaletLogo">
+      </div>
+  <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+    </div>
+  </header>
+  <nav>
+    <ol class="gridForNav">
+
+
+        <!-- containers for nav points -->
+        <div class="menu link5">
+
+        <a href="../index.html">&#9734; Home &#9734;</a>
+
+        </div>
+        <div class="menu link1">
+
+            <a href="page1.html">&#9734; Accomodation  &#9734;
+            </a>
+
+        </div>
+        <div class="menu link2">
+
+            <a href="page2.html">&#9734; Summer &#9734;</a>
+
+        </div>
+        <div class="menu link3">
+
+            <a href="page3.html">&#9734; Winter  &#9734;</a>
+
+        </div>
+        <!-- <div class="menu link4"> -->
+
+            <!-- <a href="files/page4.html">page4</a> -->
+
+        <!-- </div> -->
+
+
+  </ol>
+</nav>
+<main class="mainPage4">
+  <div class="mainPage4_1">
+    <table class="contactTable">
+      <tr>
+        <th>Contact Info</th>
+        <th><img src="../img/gomez.jpg" alt="gomez"></br>	Gomez Addams </br><em> Owner </em></th>
+        <th class="hidden"> <img src="../img/morticia.jpg" alt="morticia"></br> Morticia Addams <br><em>Owner's wife(off limits)</em> </th>
+        <th class="hidden"><img src="../img/fester.jpg" alt="fester"></br> Fester Addams  </br> <em>Master Chef</em></th>
+        <th class="hidden"><img src="../img/wednesday.jpg" alt="wednesday"></br> Wednesday Addams  </br><em>She's around...</em></th>
+        <th class="hidden"><img src="../img/pugsley.jpg" alt="pugsley"></br> Pugsley Addams  </br><em> He's always around...</em></th>
+        <th class="hidden"><img src="../img/lurch.jpg" alt="lurch"></br>	Lurch  </br><em>Buttler</em></th>
+        <th><img src="../img/thing.jpg" alt="thing"></br> Thing  </br><em>Reception</em></th>
+      </tr>
+      <tr>
+        <td><img src="../img/phone.jpg" alt="phone"</td>
+        <td>Call the reception!</td>
+        <td class="hidden">She is busy</br> DON'T CALL!!</td>
+        <td class="hidden">Kitchen line 1</td>
+        <td class="hidden">You dont wanna talk to </br>her...are you???</td>
+        <td class="hidden">Bad phone</br> manners</td>
+        <td class="hidden">Just Shout </br>for him</td>
+        <td>+666 5-FIN-GERS</br>( Great Listener)</td>
+      </tr>
+      <tr>
+        <td><img src="../img/email.jpg" alt="e-mail"</td>
+        <td>gomez@addams.net</td>
+        <td class="hidden">She is too busy</br>to read it...</td>
+        <td class="hidden">No WIFI </br>in the kitchen.</td>
+        <td class="hidden">thursday@addams.net</td>
+        <td class="hidden">Cant read...</td>
+        <td class="hidden">Cant type....</td>
+        <td>fastFingers@addams.org</br>Prefered comunication</br> good keyboard skills.</td>
+      </tr>
+      <tr>
+        <td><img src="../img/facebook.jpg" alt="facebook"</td>
+        <td>gomez@addams.net</td>
+        <td class="hidden">She hate FB!</td>
+        <td class="hidden">No WIFI </br>in the kitchen.</td>
+        <td class="hidden">friday@addams.net</td>
+        <td class="hidden">Cant read...</td>
+        <td class="hidden">Cant type....</td>
+        <td>fastFingers@addams.org</br>Prefered comunication</br> good keyboard skills.</td>
+      </tr>
+      <tr>
+        <td><img src="../img/twitter.jpg" alt="twitter"</td>
+        <td>gomez@addams.net</td>
+        <td class="hidden">She love birds!</br> Roasted.</td>
+        <td class="hidden">No WIFI </br>in the kitchen.</td>
+        <td class="hidden">tuesday@addams.com</td>
+        <td class="hidden">Cant read...</td>
+        <td class="hidden">Cant type....</td>
+        <td>fastFingers@addams.org</br>Prefered comunication</br> good keyboard skills.</td>
+      </tr>
+
+
+    </table>
+
+  </div>
+  <div class="mainPage4_2">
+      <h1>Meet our Friendly Staff.</h1>
+  </div>
+  <div class="mainPage4_3">
+
+      <img src="../img/map.jpg" style="width:95%" alt="map"  >
+
+  </div>
+  <div class="mainPage4_4">
+      <h1>Easy to find</br>Location!!!</h1>
+  </div>
+  <div class="mainPage4_5">
+    <h1>Price may vary on our taste of you!!!</h1>
+  </div>
+  <div class="mainPage4_6">
+    <h2>Sure , we can agree on the money! </h2>
+  </div>
+
+</main>
+<footer class="footerPage4">
+  <div class="footIndex">
+
+
+      <iframe width="95%" height="220" ; src="https://www.youtube.com/embed/tEqcxmSMNfE?autoplay=1"></iframe>
+  </div>
+</footer>
+</body>

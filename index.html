@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ski-chalets</title>
+      <link href="files/styles.css" type="text/css" rel="stylesheet">
+    <style>
+        /* breakpoints for 700px */
+    @media screen and (max-width:700px) {
+      div.head{
+        flex-direction: column;
+          }
+          .gridForNav{
+            display: flex;
+            flex-direction: column;
+          }
+          .mainIndex{
+            display: flex;
+            flex-direction: column;
+          }
+          .mainIndex5{
+            display: flex;
+            flex-direction: column;
+          }
+      }
+
+    </style>
+  </head>
+  <body class="index">
+<header>
+  <div class="head indexPage">
+    <div><h1>Home</br><em style="color:fuchsia;"> "Test site, nothing is real here :)"</em></h1></div>
+
+      <!-- Display the countdown timer in an element -->
+<div><h2>Countdown to Christmas: <p id="demo"></p></h2></div>
+<div>
+  <img src="img/chaletLogo.jpg" alt="chaletLogo">
+</div>
+
+<script>
+// Set the date we're counting down to //
+var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time //
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date //
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds //
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+  </div>
+</header>
+<nav class="nav">
+  <ol class="gridForNav">
+
+
+  <!-- containers for nav points -->
+</div>
+<div class="menu link5">
+
+<a href="index.html"> &#9734; Home &#9734;</a>
+
+</div>
+  <div class="menu link1">
+
+      <a href="files/page1.html"> &#9734; Accomodation  &#9734;
+      </a>
+
+  </div>
+  <div class="menu link2">
+
+      <a href="files/page2.html">&#9734; Summer  &#9734;</a>
+
+  </div>
+  <div class="menu link3">
+
+      <a href="files/page3.html">&#9734; Winter  &#9734;</a>
+
+  </div>
+  <div class="menu link4">
+
+      <a href="files/page4.html">&#9734; Contact us &#9734;</a>
+
+  </div>
+
+
+  </ol>
+</nav>
+<main class="mainIndex">
+  <div class="mainIndex1">
+      <p><em style="font-size:25px;color:lawngreen;">BREATH TAKING LOCATIONS!!!</em></br>
+        Brand new (dec.2025) and truly beautiful chalet with a high standard, with all the luxury and beautiful decor.
+        Ideal for (ski) vacations with family or several families. Located in the ski area of Portes des Soleil.
+       In the summer it is an excellent place to be. Beautiful setting with great sports facilities in the immediate vicinity.
+        In the town there is recently a luxurious spa / wellness center come. This is open all year round. With beautifully
+        landscaped thermal baths, indoor and outdoor. Nice trips can be made to eg Geneva, Lausanne, Montreux, Evian, Thonon.</br>
+        <em style="font-size:25px;color:lawngreen;">All on max 1 hour drive from the chalet.</em></p>
+  </div>
+  <div class="mainIndex2">
+        <h1>Photo</br>Gallery:</br>
+        <h2 style="color:crimson;font-size:2em;">Looks </br>bigger in</br>REAL </br>LIFE</h2></h1>
+  </div>
+  <div class="mainIndex3">
+      <img class="mySlides" src="img/gallery1.jpg" style="width:90%">
+      <img class="mySlides" src="img/gallery2.jpg" style="width:90%">
+      <img class="mySlides" src="img/gallery3.jpg" style="width:90%">
+      <img class="mySlides" src="img/gallery4.jpg" style="width:90%">
+      <img class="mySlides" src="img/gallery5.jpg" style="width:90%">
+
+      <button class="w3-button w3-black w3-display-left"  onclick="plusDivs(-1)">     Back       </button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">      Forward      </button>
+      <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+              }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+            }
+        </script>
+
+  </div>
+  <div class="mainIndex4">
+      <h1>Merry Christmas and Happy New Year!</h1>
+  </div>
+  <div class="mainIndex5">
+      <img src="img/skiRentLogo.png"  alt="skiRent" width="167" height="225"><img src="img/skiRent.jpeg" alt="skiRent" width="auto" height="225">
+
+  <ul>
+    <h4>We have the right skis for you!</h4>
+    <li>rent 7 days - pay only 6 days</li>
+    <li>Kids up to 10 years free
+    <li>kids & youngsters up to 14 get -50%
+    <li><h3 style="color:lawngreen;text-shadow:1px 1px crimson;font-size:1.5em;">Get your equipment ,on the day before</h3></li>
+  </ul>
+  </div>
+
+</main>
+<footer>
+  <div class="footIndex">
+<!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/cEzFVL12Mfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+      <iframe width="95%" height="220" ; src="https://www.youtube.com/embed/tEqcxmSMNfE?autoplay=1"></iframe>
+</div>
+</footer>
+  </body>
+</html>

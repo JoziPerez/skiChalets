@@ -1,0 +1,177 @@
+*{
+  cursor: url(hand.cur),auto;
+}
+
+
+.index{
+  background-color: mediumblue;
+  background-image: url(../img/backGr1.gif);
+
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+
+  color: aliceblue;
+ }
+.nav{
+  position: sticky;
+}
+
+.page1{
+  background-image: url(../img/backGr3.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: aliceblue;
+}
+.page2{
+  background-image: url(../img/summer1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  color: aliceblue;
+}
+.page3{
+  background-image: url(../img/winter.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-blend-mode:difference;
+
+  color: aliceblue;
+}
+.page4{
+  background-image: url(../img/backGrAcc.jpg);
+  background-repeat:repeat;
+  background-attachment: fixed;
+  background-size:cover;
+
+  color: aliceblue;
+}
+#demo{
+  color: crimson;
+  font-size: 2em;
+}
+.head{
+  /* flexbox for heading */
+  display: flex;
+  font-size: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  background: transparent;
+  text-shadow: 3px 2px dodgerblue;
+}
+
+.gridForNav{
+  /* flexbox for navigation */
+  font-size: 25px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  background: transparent;
+  text-shadow: 1px 1px cyan;
+}
+a:link{
+  color: dodgerblue;
+}
+a:visited{
+  color: darkblue;
+}
+a:hover{
+  color: crimson;
+}
+.mainIndex{
+  /* grid of the main on index page */
+  display: grid;
+  grid-template-columns: 3fr 2fr 4fr;
+  text-align: center;
+}
+
+/* index page main section grid areas */
+.mainIndex1{grid-area:2/1/3/2;font-size: 1.2em;text-shadow: 1px 1px crimson;padding-top: 150px;}
+.mainIndex2{grid-area: 2/2/3/3;color: mediumblue;}
+.mainIndex3{grid-area:2/3/3/4;}
+.mainIndex4{grid-area: 1/1/2/4;padding:200px;color: crimson;text-align:center;}
+.mainIndex5{grid-area: 3/1/4/4;display: flex;flex-direction: row;font-size: 1.5em;text-shadow: 1px 1px dodgerblue;}
+.mySlides{border: 8px groove silver;}
+.w3-button{
+  border: 4px groove silver;
+  background-color:mediumblue;
+  color: white;"
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+
+.mainPage1{
+/* page1 "Accomodation" main grid   */
+
+display: grid;
+grid-template-columns: 3fr 1fr 4fr;
+text-align:center;
+}
+
+/* page1 "Accomodation"main section grid areas and styles */
+.mainPage1_1{grid-area: 2/2/3/3;}
+.mainPage1_2{grid-area: 2/1/3/2;}
+.mainPage1_3{grid-area: 1/3/2/4;}
+.mainPage1_4{grid-area: 2/3/3/4;text-align: center;color: lawngreen;font-size: 2em;text-shadow:1px 1px mediumblue;}
+.mainPage1_5{grid-area: 1/1/2/2;}
+.mainPage1_6{grid-area: 1/2/2/3;text-align: center;color: dodgerblue;font-size: 1.8em;text-shadow: 1px 1px crimson;}
+
+.mainPage2{
+  /* page2 "summer"main grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+.mainPage2_1{grid-area:1/1/2/2; }
+.mainPage2_2{grid-area:1/2/2/3; }
+.mainPage2_3{grid-area:2/2/2/3; }
+.mainPage2_4{grid-area:2/1/2/2; }
+.mainPage2_5{grid-area:3/2/4/3; }
+.mainPage2_6{grid-area:3/1/4/2; }
+
+.mainPage3{
+  /* PAGE3"WINTER"MAIN GRID */
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: space-between;
+  text-shadow: 2px 1px dodgerblue;
+
+}
+.mainPage4{
+  /* page4 "Contact Us " main section grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+
+}
+
+/* page4 "Contact Us"main section grid areas and styles */
+.mainPage4_1{grid-area:2/1/3/3; }
+.mainPage4_2{grid-area:1/1/2/3; font-size: 2.3em;;color: crimson;}
+.mainPage4_3{grid-area:3/1/4/2; }
+.mainPage4_4{grid-area:3/2/4/3; font-size: 2.3em;;color: crimson;text-shadow: 1px 1px white;}
+.mainPage4_5{grid-area:4/1/5/3; font-size: 2em;;color: crimson;text-shadow: 1px 1px white;}
+.mainPage4_6{grid-area:5/1/6/3; font-size: 2em;;color: crimson;text-shadow: 1px 1px white;}
+
+.contactTable{
+  color: aliceblue;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align:center;
+
+}
+.footIndex{
+
+}
