@@ -1,7 +1,10 @@
 *{
   cursor: url(hand.cur),auto;
 }
-
+nav{
+  position: sticky;
+  top:10px;
+}
 
 .index{
   background-color: mediumblue;
@@ -13,9 +16,7 @@
 
   color: aliceblue;
  }
-.nav{
-  position: sticky;
-}
+
 
 .page1{
   background-image: url(../img/backGr3.gif);
@@ -75,6 +76,7 @@
   justify-content: space-around;
   background: transparent;
   text-shadow: 1px 1px cyan;
+
 }
 a:link{
   color: dodgerblue;
