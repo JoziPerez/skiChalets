@@ -5,8 +5,8 @@
     <title>Ski-chalets</title>
       <link href="files/styles.css" type="text/css" rel="stylesheet">
     <style>
-        /* breakpoints for 700px */
-    @media screen and (max-width:900px) {
+        /* breakpoints for 768px */
+    @media screen and (max-width:768px) {
       div.head{
         flex-direction: column;
           }
@@ -23,6 +23,23 @@
             flex-direction: column;
           }
       }
+      /* breakpoints for 1024px */
+  @media screen and (max-width:1024px) {
+    div.head{
+      flex-direction: column;
+        }
+
+        .mainIndex{
+          display: flex;
+          flex-direction: column;
+        }
+        .mainIndex5{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+    }
+
 
     </style>
   </head>
@@ -117,7 +134,7 @@ var x = setInterval(function() {
   </div>
   <div class="mainIndex2">
         <h1>Photo</br>Gallery:</br>
-        <h2 style="color:crimson;font-size:2em;">Looks </br>bigger in</br>REAL </br>LIFE</h2></h1>
+        <h2 style="color:crimson;font-size:2em;">Want to see the</br>bigger picture?</br>REAL </br>LIFE</h2></h1>
   </div>
   <div class="mainIndex3">
       <img class="mySlides" src="img/gallery1.jpg" style="width:90%">
@@ -153,13 +170,14 @@ var x = setInterval(function() {
       <h1>Merry Christmas and Happy New Year!</h1>
   </div>
   <div class="mainIndex5">
-      <img src="img/skiRentLogo.png"  alt="skiRent" width="167" height="225"><img src="img/skiRent.jpeg" alt="skiRent" width="auto" height="225">
-
-  <ul>
+      <img src="img/skiRentLogo.png"  alt="skiRent" width="167" height="225">
+      <img src="img/skiRent.jpeg" alt="skiRent" width="auto" height="225">
+      <img src="img/warning.jpg" alt="warning" width="auto" height="225">
+  <ul style="list-style-type:none;">
     <h4>We have the right skis for you!</h4>
     <li>rent 7 days - pay only 6 days</li>
-    <li>Kids up to 10 years free
-    <li>kids & youngsters up to 14 get -50%
+    <li>Kids up to 10 years free</li>
+    <li>kids & youngsters up to 14 get -50%</li>
     <li><h3 style="color:lawngreen;text-shadow:1px 1px crimson;font-size:1.5em;">Get your equipment ,on the day before</h3></li>
   </ul>
   </div>
@@ -171,6 +189,9 @@ var x = setInterval(function() {
 
       <iframe width="95%" height="220" ; src="https://www.youtube.com/embed/tEqcxmSMNfE?autoplay=1"></iframe>
 </div>
+<p>
+  &copy;JoeP
+</p>
 </footer>
   </body>
 </html>
