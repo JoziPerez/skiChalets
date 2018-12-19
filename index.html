@@ -48,17 +48,19 @@
   <div class="head indexPage">
     <div><h1>Home</br><em style="color:fuchsia;"> "Test site, nothing is real here :)"</em></h1></div>
 
-      <!-- Display the countdown timer in an element -->
+      <!-- Display the countdown timer  -->
 <div><h2>Countdown to Christmas: <p id="demo"></p></h2></div>
 <div>
   <img src="img/chaletLogo.jpg" alt="chaletLogo">
 </div>
 
 <script>
+    // countdown script//
+
 // Set the date we're counting down to //
 var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
 
-// Update the count down every 1 second
+// Update the count down every 1 second//
 var x = setInterval(function() {
 
   // Get todays date and time //
@@ -73,11 +75,11 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
+  // Display the result in the element with id="demo"//
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
+  // If the count down is finished, write EXPIRED//
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
@@ -91,7 +93,7 @@ var x = setInterval(function() {
 
 
   <!-- containers for nav points -->
-</div>
+
 <div class="menu link5">
 
 <a href="index.html"> &#9734; Home &#9734;</a>
@@ -146,6 +148,7 @@ var x = setInterval(function() {
       <button class="w3-button w3-black w3-display-left"  onclick="plusDivs(-1)">     Back       </button>
       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">      Forward      </button>
       <script>
+            //  sript for slideshow gallery pictures
             var slideIndex = 1;
             showDivs(slideIndex);
 
@@ -170,6 +173,7 @@ var x = setInterval(function() {
       <h1>Merry Christmas and Happy New Year!</h1>
   </div>
   <div class="mainIndex5">
+    <!-- 3 image plus unordered list  -->
       <img src="img/skiRentLogo.png"  alt="skiRent" width="167" height="225">
       <img src="img/skiRent.jpeg" alt="skiRent" width="auto" height="225">
       <img src="img/warning.jpg" alt="warning" width="auto" height="225">
@@ -185,7 +189,7 @@ var x = setInterval(function() {
 </main>
 <footer>
   <div class="footIndex">
-<!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/cEzFVL12Mfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<!--youtube video on autoplay -->
 
       <iframe width="95%" height="220" ; src="https://www.youtube.com/embed/tEqcxmSMNfE?autoplay=1"></iframe>
 </div>

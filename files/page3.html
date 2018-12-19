@@ -42,6 +42,8 @@
             <img src="../img/chaletLogo.jpg" alt="chaletLogo">
       </div>
   <script>
+      // countdown script//
+
   // Set the date we're counting down to
   var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
 
@@ -64,7 +66,7 @@
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 
-    // If the count down is finished, write some text
+    // If the count down is finished, write EXPIRED
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("demo").innerHTML = "EXPIRED";
@@ -125,7 +127,7 @@
 </main>
 <footer class="footerPage3">
   <div class="footIndex">
-
+<!--youtube video on autoplay -->
 
       <iframe width="95%" height="220" ; src="https://www.youtube.com/embed/tEqcxmSMNfE?autoplay=1"></iframe>
   </div>
