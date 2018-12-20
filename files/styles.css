@@ -1,5 +1,7 @@
 *{
   cursor: url(hand.cur),auto;
+
+  font-family: serif;
 }
 nav{
   position: sticky;
@@ -25,6 +27,10 @@ nav{
   background-size: cover;
 
   color: aliceblue;
+}
+.fireplace{
+  display: none;
+  
 }
 .page2{
   background-image: url(../img/summer1.jpg);
@@ -52,9 +58,21 @@ nav{
 
   color: aliceblue;
 }
+.page5{
+  background-image: url(../img/backGr1.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
 #demo{
   color: crimson;
   font-size: 2em;
+}
+#easterEgg{
+  color: aliceblue;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 .head{
   /* flexbox for heading */

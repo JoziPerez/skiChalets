@@ -40,9 +40,7 @@
   <header>
     <div class="head page4">
             <!-- Display name of the page -->
-      <div>
-        <h1>Contact us</br>
-        <em style="color:fuchsia;"> "Test site, nothing is real here :)"</em></h1></div>
+      <div><h1>Contact us</br><em style="color:fuchsia;"> "Test site, nothing is real here :)"</em></h1></div>
         <!-- Display the countdown timer in an element -->
       <div><h2>Countdown to Christmas: <p id="demo"></p></h2></div>
       <div>
@@ -50,8 +48,6 @@
         <img src="../img/chaletLogo.jpg" alt="chaletLogo">
       </div>
   <script>
-    //countdown script//
-
   // Set the date we're counting down to
   var countDownDate = new Date("Dec 25, 2018 00:00:00").getTime();
 
@@ -74,7 +70,7 @@
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 
-    // If the count down is finished, EXPIRED
+    // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("demo").innerHTML = "EXPIRED";
@@ -132,17 +128,17 @@
         <th><img src="../img/thing.jpg" alt="thing"></br> Thing  </br><em>Reception</em></th>
       </tr>
       <tr>
-        <td><img src="../img/phone.jpg" alt="phone"></td>
+        <td><img src="../img/phone.jpg" alt="phone"</td>
         <td>Call the reception!</td>
         <td class="hidden morty">She is busy</br> DON'T CALL!!</td>
         <td class="hidden">Kitchen line 1</td>
         <td class="hidden morty">You dont wanna talk to </br>her...are you???</td>
         <td class="hidden morty">Bad phone</br> manners</td>
         <td class="hidden">Just Shout </br>for him</td>
-        <td>+666 5-FIN-GERS</br>( Great Listener)</td>
+        <td>+666 5-FIN-GERS</br><a id="easterEgg"href="page5.html">( Great Listener)</a></td>
       </tr>
       <tr>
-        <td><img src="../img/email.jpg" alt="e-mail"></td>
+        <td><img src="../img/email.jpg" alt="e-mail"</td>
         <td>gomez@addams.net</td>
         <td class="hidden morty">She is too busy</br>to read it...</td>
         <td class="hidden">No WIFI </br>in the kitchen.</td>
@@ -152,9 +148,9 @@
         <td>fastFingers@addams.org</br>Prefered comunication</br> good keyboard skills.</td>
       </tr>
       <tr>
-        <td><img src="../img/facebook.jpg" alt="facebook"></td>
+        <td><img src="../img/facebook.jpg" alt="facebook"</td>
         <td>gomez@addams.net</td>
-        <td class="hidden morty">She hate FB!</td>
+        <td class="hidden morty">She hates FB!</td>
         <td class="hidden">No WIFI </br>in the kitchen.</td>
         <td class="hidden morty">friday@addams.net</td>
         <td class="hidden morty">Can't read...</td>
@@ -162,9 +158,9 @@
         <td>fastFingers@addams.org</br>Prefered comunication</br> good keyboard skills.</td>
       </tr>
       <tr>
-        <td><img src="../img/twitter.jpg" alt="twitter"></td>
+        <td><img src="../img/twitter.jpg" alt="twitter"</td>
         <td>gomez@addams.net</td>
-        <td class="hidden morty">She love birds!</br> Roasted.</td>
+        <td class="hidden morty">She loves birds!</br> Roasted.</td>
         <td class="hidden">No WIFI </br>in the kitchen.</td>
         <td class="hidden morty">tuesday@addams.com</td>
         <td class="hidden morty">Can't read...</td>
@@ -181,7 +177,7 @@
   </div>
   <div class="mainPage4_3">
 
-      <img src="../img/map.jpg" style="width:95%" alt="map"  >
+      <img src="../img/map.jpg" style="width:95%;height: auto;" alt="map"  >
 
   </div>
   <div class="mainPage4_4">
@@ -197,12 +193,9 @@
 </main>
 <footer class="footerPage4">
   <div class="footIndex">
-        <!--youtube video on autoplay -->
+
 
       <iframe width="95%" height="220" ; src="https://www.youtube.com/embed/tEqcxmSMNfE?autoplay=1"></iframe>
-      <p>
-        &copy;JoeP
-      </p>
   </div>
 </footer>
 </body>
