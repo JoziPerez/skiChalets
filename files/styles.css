@@ -1,11 +1,13 @@
 *{
   cursor: url(hand.cur),auto;
 
-  font-family: serif;
+  font-family: Lucida,serif ;
+
 }
 nav{
   position: sticky;
   top:10px;
+
 }
 
 .index{
@@ -30,7 +32,7 @@ nav{
 }
 .fireplace{
   display: none;
-  
+
 }
 .page2{
   background-image: url(../img/summer1.jpg);
